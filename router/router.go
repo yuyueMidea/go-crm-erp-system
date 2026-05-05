@@ -4,7 +4,7 @@ import (
 	"crm-erp-system/controller"
 	"crm-erp-system/middleware"
 	"net/http"
-
+	"time"
 	"github.com/gin-gonic/gin"
 )
 
@@ -32,6 +32,7 @@ func SetupRouter() *gin.Engine {
 			"message": "GO CRM+ERP System API",
 			"author": "yuyue3",
 			"version": "1.0.0",
+			"timestamp": time.Now().Format(time.RFC3339),
 		})
 	})
 
